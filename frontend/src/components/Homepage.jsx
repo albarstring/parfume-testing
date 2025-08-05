@@ -1,17 +1,6 @@
 import { useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-/**
- * Homepage component for Brandio.
- * 
- * NOTE: This component does NOT use any react-router-dom hooks or components.
- * It is a presentational component and is safe to use outside of a <Router> context.
- * 
- * If you see errors like "useLocation() may be used only in the context of a <Router> component",
- * those errors are NOT caused by this file, but by other components (e.g., Navbar) or by missing
- * <Router> setup in your App.jsx.
- */
-
 const pastel = {
   cream: "#FDF6F0",
   blue: "#D6E6F7",
