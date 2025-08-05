@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run vite",
+    "build": "npm run vite-build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npm run vite-preview",
+    "vite": "vite",
+    "vite-build": "vite build",
+    "vite-preview": "vite preview"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.14.4",
