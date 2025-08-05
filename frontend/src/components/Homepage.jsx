@@ -1,6 +1,17 @@
 import { useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
+/**
+ * Homepage component for Brandio.
+ * 
+ * NOTE: This component does NOT use any react-router-dom hooks or components.
+ * It is a presentational component and is safe to use outside of a <Router> context.
+ * 
+ * If you see errors like "useLocation() may be used only in the context of a <Router> component",
+ * those errors are NOT caused by this file, but by other components (e.g., Navbar) or by missing
+ * <Router> setup in your App.jsx.
+ */
+
 const pastel = {
   cream: "#FDF6F0",
   blue: "#D6E6F7",
@@ -9,18 +20,12 @@ const pastel = {
   shadow: "0 8px 32px 0 rgba(60, 80, 120, 0.10)",
 };
 
-const iconStyle =
-  "mx-auto mb-6 rounded-full flex items-center justify-center shadow-lg";
-const iconBg = "bg-white";
-const iconSize = "w-16 h-16";
-const iconColor = "#7BA7D9";
-
 const Hero = () => {
   // Koordinat tujuan: Mall of Serang
   const destinationLat = -6.118911693867718;
   const destinationLng = 106.17933717537157;
 
-  // Tambahkan inisialisasi AOS
+  // Inisialisasi AOS (Animate On Scroll)
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("aos").then((AOS) => {
@@ -101,7 +106,7 @@ const Hero = () => {
               mulai dari billboard, digital, hingga analitik, di Kota Serang dan
               sekitarnya.
             </p>
-            {/* Tombol CTA: Lihat Layanan & Konsultasi Gratis, dirapikan agar rata kiri dengan teks "Hallo" */}
+            {/* Tombol CTA: Lihat Layanan & Konsultasi Gratis */}
             <div
               className="mt-6 flex flex-col md:flex-row items-center md:items-start md:justify-start gap-6 z-10 w-full"
               data-aos="fade-up"

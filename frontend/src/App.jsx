@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Homepage";
 import Footer from "./components/Footer";
-import Produk from "./components/Produk";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,7 +34,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/produk" element={<Produk />} />
         </Routes>
         <Footer />
       </Router>
